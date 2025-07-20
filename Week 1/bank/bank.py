@@ -1,7 +1,7 @@
-x = input("Greeting: ")
-if x.strip()[0:5].lower() == "hello":
+x = input("Greeting: ").strip().lower()
+if x[0:5] == "hello":
     print("$0")
-elif x.strip()[0:1].lower() == "h":
+elif x[0] == "h":
     print("$20")
 else:
     print("$100")
